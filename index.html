@@ -27,6 +27,7 @@
 <div class="contain">
     <div class="header_tit">
         <img src="./img/header_tit.png"/>
+
     </div>
     <div class="noop_box">
         <div class="noop_top">
@@ -50,12 +51,47 @@
             <div class="chart_blank"></div>
         </div>
     </div>
-
+    <div class="date_number">
+        <div class="date_img">
+            <img src="img/shijian.png"/>
+        </div>
+        <div class="date_detil">
+            <p id="date_number"></p>
+        </div>
+    </div>
 </div>
 </body>
 <script src="js/main.js"></script>
 <script>
-    // $('.contain')[0].style.zoom = window.innerWidth / 1920
+    $('.contain')[0].style.zoom = window.innerWidth / 1920
     $('body').height('1080px')
+    $(function () {
+        setInterval('$("#date_number").html(getTime())', 1000)
+    })
+    console.log(getTime())
+
+    function getTime() {
+        var now = new Date();
+        var year = now.getFullYear();
+        var month = now.getMonth() + 1;
+        var day = now.getDate();
+
+        var today = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        var week = today[now.getDay()];
+
+        var hour = now.getHours();
+        var min = now.getMinutes();
+        var sec = now.getSeconds();
+        if (hour < 10) {
+            hour = "0" + hour;
+        }
+        if (min < 10) {
+            min = "0" + min;
+        }
+        if (sec < 10) {
+            sec = "0" + sec;
+        }
+        return year + "年" + month + "月" + day + "日" + " " + hour + ":" + min + ":" + sec;
+    }
 </script>
 </html>
