@@ -23,7 +23,7 @@ function bottomCenterCharts() {
         },
         tooltip: {
             trigger: 'item',
-            formatter: '{a} <br/>{b} : {c} ({d}%)'
+            formatter: '{a} <br/>{b} : {c}万元 ({d}%)'
         },
         grid: {
             left: '3%',
@@ -44,6 +44,11 @@ function bottomCenterCharts() {
                         shadowColor: 'rgba(0, 0, 0, 0.5)'
                     }
                 },
+                label: {
+                    show: true,
+                    fontSize: 15,
+                    formatter: '{c}万元'
+                },
                 labelLine: {
                     show: true
                 },
@@ -51,7 +56,7 @@ function bottomCenterCharts() {
                     {value: 335, name: '洽谈'},
                     {value: 310, name: '合作'},
                     {value: 234, name: '进行'},
-                    {value: 135, name: '完成'}
+                    {value: 435, name: '完成'}
                 ]
             }
         ]
