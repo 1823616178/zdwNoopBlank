@@ -4,4 +4,5 @@ $(function () {
     getTopRightCharts()
     bottomCenterCharts()
     getBottomLeftcharts()
+    getBottomRightCharts()
 })
