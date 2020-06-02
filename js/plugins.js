@@ -102,6 +102,7 @@ function getCenterMap() {
         },
         series: [
             {
+
                 type: 'map',
                 mapType: 'china',
                 roam: false,

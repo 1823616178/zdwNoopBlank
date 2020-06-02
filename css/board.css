@@ -29,6 +29,9 @@ body {
 }
 
 .noop_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     font-size: 0;
     /*overflow: hidden;*/
 }
@@ -49,14 +52,18 @@ body {
 }
 
 .noop_center {
-    width: 835px;
+    width: 634px;
     box-sizing: border-box;
     height: 481px;
+    margin: 0 auto;
     margin-bottom: -100px;
     display: inline-block;
 }
 
 .noop_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     font-size: 0;
     margin-top: 42px;
     overflow: hidden;
