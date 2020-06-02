@@ -58,10 +58,13 @@ function getTopLeftCharts() {
                     color: '#34a8af'
                 }
             },
+            axisTick: {
+                show: false
+            },
             splitLine: {
                 show: true,
                 lineStyle: {
-                    color: '#2e999f'
+                    color: '#0e2a44'
                 }
             }
         },

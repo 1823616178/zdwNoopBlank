@@ -25,7 +25,7 @@ function getTopRightCharts() {
             type: 'category',
             axisLine: {
                 lineStyle: {
-                    color: '#65c6e7'
+                    color: '#206d7e'
                 }
             },
             axisLabel: {
@@ -50,10 +50,13 @@ function getTopRightCharts() {
             },
             axisLine: {
                 lineStyle: {
-                    color: '#65c6e7'
+                    color: '#206d7e'
                 }
             },
             splitLine: {
+                show: false
+            },
+            axisTick: {
                 show: false
             }
         },

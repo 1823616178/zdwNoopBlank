@@ -26,7 +26,7 @@ function getBottomLeftcharts() {
             type: 'category',
             axisLine: {
                 lineStyle: {
-                    color: '#34a8af'
+                    color: '#206d7e'
                 }
             },
             axisLabel: {
@@ -50,18 +50,14 @@ function getBottomLeftcharts() {
                     color: '#34a8af'
                 }
             },
-            axisLine: {
-                show: false,
-                lineStyle: {
-                    color: '#34a8af'
-                }
-            },
+            axisLine: {show: false},
             splitLine: {
                 show: true,
                 lineStyle: {
-                    color: '#2e999f'
+                    color: '#0e2a44'
                 }
-            }
+            },
+            axisTick: {show: false}
         },
         series: [{
             data: [820, 1132, 901, 1634, 1290, 1330],
