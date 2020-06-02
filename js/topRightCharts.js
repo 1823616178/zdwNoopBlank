@@ -3,6 +3,7 @@ function getTopRightCharts() {
     var instancel = echarts.init(line_chart)
     let option = {
         title: {
+            show:false,
             text: '询价单统计',
             textStyle: {
                 color: '#0099ff'
@@ -27,6 +28,11 @@ function getTopRightCharts() {
         },
         xAxis: {
             type: 'category',
+            axisLine: {
+                lineStyle: {
+                    color: '#65c6e7'
+                }
+            },
             axisLabel: {
                 textStyle: {
                     color: '#65c6e7'
@@ -35,14 +41,19 @@ function getTopRightCharts() {
         },
         yAxis: {
             type: 'value',
-            name: '单位：单',
-            nameGap: 5,
+            name: '(单位：单)',
+            nameGap: 25,
             nameTextStyle: {
                 color: '#65c6e7'
             },
             axisLabel: {
                 textStyle: {
                     fontSize: 9,
+                    color: '#65c6e7'
+                }
+            },
+            axisLine: {
+                lineStyle: {
                     color: '#65c6e7'
                 }
             },

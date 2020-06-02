@@ -4,6 +4,7 @@ function bottomCenterCharts() {
 
     let option = {
         title: {
+            show: false,
             text: '共享工厂(本年)',
             left: 'center',
             top: 'top',

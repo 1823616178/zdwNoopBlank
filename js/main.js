@@ -3,4 +3,5 @@ $(function () {
     getCenterMap()
     getTopRightCharts()
     bottomCenterCharts()
+    getBottomLeftcharts()
 })
