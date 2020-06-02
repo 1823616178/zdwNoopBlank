@@ -2,11 +2,11 @@ body {
     background-color: #00223d;
 }
 
-/*@media screen and (max-height: 1000px) {
+@media screen and (max-height: 1000px) {
     body {
-        height: 1080px !important;
+        height: max-content !important;
     }
-}*/
+}
 
 .contain {
     /*overflow: hidden;*/
@@ -29,7 +29,7 @@ body {
 
 .noop_box {
     width: 100%;
-    padding: 36px 31px 0 31px;
+    padding: 36px 31px 36px 31px;
     box-sizing: border-box;
     overflow: hidden;
 }
