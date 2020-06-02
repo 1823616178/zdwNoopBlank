@@ -28,5 +28,4 @@ function adjustWindowZoom() {
     $(function () {
         setInterval('$("#date_number").html(getTime())', 1000)
     })
-
 }

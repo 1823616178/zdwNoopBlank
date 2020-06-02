@@ -57,6 +57,20 @@ body {
     height: 100%;
 }
 
+.chart_mis_tit {
+    margin: 0 auto;
+    color: #65c6e7;
+    width: 187px;
+    text-align: center;
+    height: 21px;
+    margin-bottom: -21px;
+    padding-top: 21px;
+}
+
+.chart_mis_tit p {
+    font-size: 24px;
+}
+
 .chart_title {
     color: #65c6e7;
     font-size: 16px;
