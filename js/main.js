@@ -24,7 +24,7 @@ function resize() {
 
 function adjustWindowZoom() {
     $('.contain')[0].style.zoom = window.innerWidth / 1920
-    $('body').height('1080px')
+    $('body').height(window.innerHeight)
     $(function () {
         setInterval('$("#date_number").html(getTime())', 1000)
     })

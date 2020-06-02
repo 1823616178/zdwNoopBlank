@@ -23,7 +23,7 @@ body {
 
 .noop_box {
     width: 100%;
-    padding: 36px 31px;
+    padding: 36px 31px 0 31px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -39,7 +39,6 @@ body {
     display: inline-block;
     width: 515px;
     height: 381px;
-
     background-size: contain;
     overflow: hidden;
 }
