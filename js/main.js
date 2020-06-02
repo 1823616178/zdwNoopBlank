@@ -1,3 +1,4 @@
 getTopLeftCharts()
 getCenterMap()
 getTopRightCharts()
+bottomCenterCharts()

@@ -29,7 +29,7 @@ function getTopRightCharts() {
             type: 'category',
             axisLabel: {
                 textStyle: {
-                    color: '#0099ff'
+                    color: '#65c6e7'
                 }
             }
         },
@@ -38,12 +38,12 @@ function getTopRightCharts() {
             name: '单位：单',
             nameGap: 5,
             nameTextStyle: {
-                color: '#0099ff'
+                color: '#65c6e7'
             },
             axisLabel: {
                 textStyle: {
                     fontSize: 9,
-                    color: '#0099ff'
+                    color: '#65c6e7'
                 }
             },
             splitLine: {
@@ -74,7 +74,7 @@ function getTopRightCharts() {
                     0, 0, 0, 1,
                     [
                         {offset: 0, color: '#d46535'},
-                        {offset: 1, color: '#d8963d'}
+                        {offset: 1, color: '#da6d75'}
                     ]
                 )
             }
