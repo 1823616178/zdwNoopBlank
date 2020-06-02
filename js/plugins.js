@@ -7,55 +7,85 @@ function getTopLeftCharts() {
             formatter: '{a} <br/>{b} : {c}'
         },
         legend: {
-            textStyle: {
-                color: "#0099ff",
-            },
-            left: 'left',
+
+            left: 'right',
             data: [
                 {
-                    name: "2的指数",
+                    name: "销售量",
+                    textStyle: {
+                        color: '#ab90df'
+                    },
+                },
+                {
+                    name: "采购量",
+                    textStyle: {
+                        color: '#feab67'
+                    },
                 }
             ]
         },
         xAxis: {
             type: 'category',
-            name: 'x',
-            lineStyle: {
-                color: "#0099ff"
+            axisLine: {
+                lineStyle: {
+                    color: '#34a8af'
+                }
             },
-            splitLine: {show: false},
             axisLabel: {
-                show: false,
-
+                textStyle: {
+                    color: '#34a8af'
+                }
             },
-            data: ['一', '二', '三', '四', '五', '六', '七', '八', '九']
+            boundaryGap: false,
+            data: ['12月', '01月', '02月', '03月', '04月', '05月']
         },
-
         yAxis: {
-            type: 'log',
-            name: 'y',
-            minorTick: {
-                show: false
+            type: 'value',
+            name: '(单位：单)',
+            nameGap: 25,
+            nameTextStyle: {
+                color: '#34a8af'
             },
-            minorSplitLine: {
-                show: false
+            axisLabel: {
+                textStyle: {
+                    fontSize: 9,
+                    color: '#34a8af'
+                }
+            },
+            axisLine: {
+                show: false,
+                lineStyle: {
+                    color: '#34a8af'
+                }
+            },
+            splitLine: {
+                show: true,
+                lineStyle: {
+                    color: '#2e999f'
+                }
             }
         },
         series: [
             {
-                name: '3的指数',
+                name: '销售量',
                 type: 'line',
-                data: [1, 3, 9, 27, 81, 247, 741, 2223, 6669],
+                data: [1, 3, 9, 27, 81, 247, 741, 900, 1000],
                 lineStyle: {
-                    color: '#0099ff'
+                    color: '#ab90df'
+                },
+                itemStyle: {
+                    color: '#ab90df'
                 }
             },
             {
-                name: '2的指数',
+                name: '采购量',
                 type: 'line',
                 data: [1, 2, 4, 8, 16, 32, 64, 128, 256],
                 lineStyle: {
-                    color: '#0099ff'
+                    color: '#feab67'
+                },
+                itemStyle: {
+                    color: '#feab67'
                 }
             },
         ]
