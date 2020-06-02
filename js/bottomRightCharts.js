@@ -49,7 +49,7 @@ function getBottomRightCharts() {
                         {offset: 1, color: '#07a8a8'}
                     ]
                 ),
-                data: [182]
+                data: [820]
             },
             {
                 name: '',
@@ -62,7 +62,7 @@ function getBottomRightCharts() {
                         {offset: 1, color: '#04ba19'}
                     ]
                 ),
-                data: [182]
+                data: [820]
             },
             {
                 name: '成交量',
@@ -82,7 +82,7 @@ function getBottomRightCharts() {
                         {offset: 1, color: '#07a8a8'}
                     ]
                 ),
-                data: [325]
+                data: [725]
             },
             {
                 name: '',
@@ -95,7 +95,7 @@ function getBottomRightCharts() {
                         {offset: 1, color: '#6996f3'}
                     ]
                 ),
-                data: [325]
+                data: [725]
             }
         ]
     };
