@@ -2,73 +2,65 @@ function getTopLeftCharts() {
     var line_chart = document.getElementById('noop_line_chart')
     var instancel = echarts.init(line_chart)
     let option = {
-        title: {
-            text: '未来一周气温变化',
-            subtext: '纯属虚构',
-            textStyle: {
-                color: '#0099ff'
-            }
-        },
         tooltip: {
-            trigger: 'axis'
+            trigger: 'item',
+            formatter: '{a} <br/>{b} : {c}'
         },
-        /* legend: {
-             textStyle: {
-                 color: '#0099ff'
-             },
-             align: 'auto',
-             data: ['最高气温', '最低气温']
-         },*/
+        legend: {
+            textStyle: {
+                color: "#0099ff",
+            },
+            left: 'left',
+            data: [
+                {
+                    name: "2的指数",
+                }
+            ]
+        },
         xAxis: {
             type: 'category',
-            boundaryGap: false,
-            data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+            name: 'x',
+            lineStyle: {
+                color: "#0099ff"
+            },
+            splitLine: {show: false},
             axisLabel: {
-                textStyle: {
-                    color: '#ffffff'
-                }
-            }
+                show: false,
+
+            },
+            data: ['一', '二', '三', '四', '五', '六', '七', '八', '九']
         },
+
         yAxis: {
-            type: 'value',
-            axisLabel: {
-                formatter: '{value} °C',
-                textStyle: {
-                    color: '#ffffff'
-                }
+            type: 'log',
+            name: 'y',
+            minorTick: {
+                show: false
+            },
+            minorSplitLine: {
+                show: false
             }
         },
         series: [
             {
-                name: '最高气温',
+                name: '3的指数',
                 type: 'line',
-                data: [11, 11, 15, 13, 12, 13, 10],
-
-                markPoint: {
-                    data: [
-                        {type: 'max', name: '最大值'},
-                        {type: 'min', name: '最小值'}
-                    ]
-                },
+                data: [1, 3, 9, 27, 81, 247, 741, 2223, 6669],
+                lineStyle: {
+                    color: '#0099ff'
+                }
             },
             {
-                name: '最低气温',
+                name: '2的指数',
                 type: 'line',
-                data: [1, -2, 2, 5, 3, 2, 0],
+                data: [1, 2, 4, 8, 16, 32, 64, 128, 256],
                 lineStyle: {
-                    color: "#0099ff"
-                },
-                markPoint: {
-                    data: [
-                        {name: '周最低', value: -2, xAxis: 1, yAxis: -1.5}
-                    ],
-                    itemStyle: {
-                        borderColor: '#0099ff'
-                    }
-                },
-            }
+                    color: '#0099ff'
+                }
+            },
         ]
     };
+
     instancel.setOption(option)
 
 }
@@ -79,6 +71,7 @@ function getCenterMap() {
 
     option = {
         legend: {
+            show: false,
             backgroundColor: '#0099ff'
         },
         tooltip: {
@@ -106,6 +99,7 @@ function getCenterMap() {
                 mapType: 'china',
                 roam: false,
                 label: {
+                    show: false,
                     normal: {
                         show: false
                     },

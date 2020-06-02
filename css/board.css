@@ -3,7 +3,7 @@ body {
 }
 
 .contain {
-    overflow: hidden;
+    /*overflow: hidden;*/
     background: url("../img/backimage.png") no-repeat;
     background-size: cover;
     height: 100%;

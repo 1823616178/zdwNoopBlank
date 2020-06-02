@@ -1,4 +1,6 @@
-getTopLeftCharts()
-getCenterMap()
-getTopRightCharts()
-bottomCenterCharts()
+$(function () {
+    getTopLeftCharts()
+    getCenterMap()
+    getTopRightCharts()
+    bottomCenterCharts()
+})
