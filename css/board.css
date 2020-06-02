@@ -140,3 +140,32 @@ body {
 .date_detil p {
     margin: 0;
 }
+
+.statistics {
+    width: 633px;
+    height: 68px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -68px;
+}
+
+.tit_group {
+    display: block;
+    text-align: center;
+
+}
+
+.tit_group p {
+    margin: 0;
+    display: block;
+    font-size: 34px;
+    line-height: 1.5;
+    color: #eae25a;
+}
+
+.tit_group span {
+    color: #5eb9d9;
+}
