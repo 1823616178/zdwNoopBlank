@@ -15,16 +15,11 @@ function getTopRightCharts() {
             }
         },
         tooltip: {},
-        dataset: {
-            source: [
-                ['product', '已报价', '未报价', '已取消'],
-                ['12月', 688, 385, 93],
-                ['01月', 583, 373, 55],
-                ['02月', 686, 265, 82],
-                ['03月', 679, 353, 69],
-                ['04月', 602, 353, 39],
-                ['05月', 652, 153, 79]
-            ]
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
         },
         xAxis: {
             type: 'category',
@@ -37,7 +32,8 @@ function getTopRightCharts() {
                 textStyle: {
                     color: '#65c6e7'
                 }
-            }
+            },
+            data: ['12月', '01月', '02月', '03月', '04月', '05月']
         },
         yAxis: {
             type: 'value',
@@ -63,31 +59,34 @@ function getTopRightCharts() {
         },
         series: [
             {
-                type: 'bar', color: new echarts.graphic.LinearGradient(
+                name:'已报价',type: 'bar', color: new echarts.graphic.LinearGradient(
                     0, 0, 0, 1,
                     [
                         {offset: 0, color: '#069e6c'},
                         {offset: 1, color: '#07a8a8'}
                     ]
-                )
+                ),
+                data:[688,583,686,679,602,652]
             },
             {
-                type: 'bar', color: new echarts.graphic.LinearGradient(
+                name:'未报价',type: 'bar', color: new echarts.graphic.LinearGradient(
                     0, 0, 0, 1,
                     [
                         {offset: 0, color: '#304bd3'},
                         {offset: 1, color: '#088ed3'}
                     ]
-                )
+                ),
+                data:[385,373,265,353,353,153]
             },
             {
-                type: 'bar', color: new echarts.graphic.LinearGradient(
+                name:'已取消',type: 'bar', color: new echarts.graphic.LinearGradient(
                     0, 0, 0, 1,
                     [
                         {offset: 0, color: '#d46535'},
                         {offset: 1, color: '#da6d75'}
                     ]
-                )
+                ),
+                data:[93, 55, 82, 69, 39, 79]
             }
         ]
     };
