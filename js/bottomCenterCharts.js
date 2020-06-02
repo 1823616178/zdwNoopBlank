@@ -25,6 +25,12 @@ function bottomCenterCharts() {
             trigger: 'item',
             formatter: '{a} <br/>{b} : {c} ({d}%)'
         },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
         color:["#00cccd","#f29961","#a682e6","#407fff","#65c6e7"],
         series: [
             {
