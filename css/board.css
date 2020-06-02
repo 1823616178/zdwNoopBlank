@@ -37,16 +37,33 @@ body {
 .noop_body {
     box-sizing: border-box;
     display: inline-block;
-    width: 511px;
+    width: 515px;
     height: 381px;
-    background: url("../img/black_piece.png") no-repeat;
+
     background-size: contain;
     overflow: hidden;
+}
+
+.noop_body_left {
+    background: url("../img/black_piece.png") no-repeat;
+}
+
+.noop_body_rit {
+    background: url("../img/right_top_backimg.png") no-repeat;
 }
 
 .chart_one {
     width: 100%;
     height: 100%;
+}
+
+.chart_title {
+    color: #65c6e7;
+    font-size: 16px;
+    width: 255px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
 }
 
 .noop_center {
@@ -67,10 +84,18 @@ body {
 .chart_blank {
     display: inline-block;
     height: 452px;
-    width: 511px;
+    width: 515px;
     overflow: hidden;
-    background: url("../img/bottom_blank.png") no-repeat;
+
     background-size: contain;
+}
+
+.chart_blank_left {
+    background: url("../img/bottom_blank.png") no-repeat;
+}
+
+.chart_blank_rit {
+    background: url("../img/buttom_right_backimg.png") no-repeat;
 }
 
 .chart_view {
@@ -82,7 +107,7 @@ body {
 
 .noop_center_buttom {
     height: 406px;
-    margin: 0 34px;
+    margin: 0 32px;
     display: inline-block;
     width: 763px;
     background: url("../img/bottom_price.png") no-repeat;
