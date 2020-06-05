@@ -34,7 +34,7 @@ function bottomCenterCharts() {
         color:["#00cccd","#f29961","#a682e6","#407fff","#65c6e7"],
         series: [
             {
-                name: '共享工厂(本年)',
+                name: '共享工厂(2020年)',
                 type: 'pie',
                 radius: ['30%', '75%'],
                 emphasis: {

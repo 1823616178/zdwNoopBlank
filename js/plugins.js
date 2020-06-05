@@ -114,7 +114,7 @@ function getCenterMap() {
             formatter: function (params) {
                 var value = (params.value + '').split('.');
                 value = value[0].replace(/(\d{1,3})(?=(?:\d{3})+(?!\d))/g, '$1,');
-                return params.seriesName + '<br/>' + params.name + ': ' + value;
+                return params.name + ': ' + value;
             }
         },
         visualMap: {
@@ -174,7 +174,8 @@ function getCenterMap() {
                     {name: '海南', value: Math.round(Math.random() * 1000)},
                     {name: '台湾', value: Math.round(Math.random() * 1000)},
                     {name: '香港', value: Math.round(Math.random() * 1000)},
-                    {name: '澳门', value: Math.round(Math.random() * 1000)}
+                    {name: '澳门', value: Math.round(Math.random() * 1000)},
+                    {name: '南海诸岛', value: Math.round(Math.random() * 1000)}
                 ],
 
             }

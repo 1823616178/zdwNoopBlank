@@ -3,9 +3,10 @@ function getBottomRightCharts() {
     var instancel = echarts.init(line_chart)
     let option = {
         title: {
-            text: '总报价(本年)',
+            text: '总报价（2020年）',
             textStyle: {
-                color: '#0099ff'
+                fontSize: 22,
+                color: '#65c6e7'
             }
         },
         tooltip: {
@@ -78,8 +79,8 @@ function getBottomRightCharts() {
                 color: new echarts.graphic.LinearGradient(
                     0, 0, 0, 0,
                     [
-                        {offset: 0, color: '#069e6c'},
-                        {offset: 1, color: '#07a8a8'}
+                        {offset: 0, color: '#07a8a8'},
+                        {offset: 1, color: '#069e6c'}
                     ]
                 ),
                 data: [725]
